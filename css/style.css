@@ -1,11 +1,11 @@
 :root {
   --main-color: #2e2f42; /* Logo/hero/footer/nav_items color*/
   --secondary-color: #fff; /* Title/Button/Cards*/
-  --link-hover-color: #404bbf; /* header links hover color*/
-  --additional-background-color: #f4f4fd; /* Team and menu button bg color, logo bottom 2nd part*/
-  --footer-text-color: #e7e9fc; /*Footer text color*/
-  --main-btn-logo-txt-color: #4d5ae5; /* Logo, service button , menu button color*/
-  --section-text-color: #434455;
+  --pressed-state-color: #404bbf; /* header links hover color*/
+  --light-color: #f4f4fd; /* Team and menu button bg color, logo bottom 2nd part*/
+  --accent-color: #e7e9fc; /*Footer text color*/
+  --primary-brand-color: #4d5ae5; /* Logo, service button , menu button color*/
+  --text-color: #434455;
 }
 
 a {
@@ -27,7 +27,7 @@ body {
 }
 /* ============================= COMPONENTS =============================*/
 .section-text {
-  color: var(--section-text-color);
+  color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -66,7 +66,7 @@ img {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--main-btn-logo-txt-color);
+  color: var(--primary-brand);
 }
 
 .logo-second-part {
@@ -127,7 +127,7 @@ img {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--link-hover-color);
+  color: var(--pressed-state-color);
 }
 
 .address {
@@ -136,7 +136,7 @@ img {
 }
 
 .address-item {
-  color: var(--section-text-color);
+  color: var(--text-color);
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -147,7 +147,7 @@ img {
 
 .address-item:hover,
 .address-item:focus {
-  color: var(--link-hover-color);
+  color: var(--pressed-state-color);
 }
 /* ============================= /HEADER =============================*/
 /* ============================= MAIN =============================*/
@@ -177,7 +177,7 @@ img {
 .service-button {
   display: block;
   margin: 0 auto;
-  background-color: var(--main-btn-logo-txt-color);
+  background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--secondary-color);
@@ -194,7 +194,7 @@ img {
 }
 .service-button:hover,
 .service-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 .visually-hidden {
@@ -297,7 +297,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--main-btn-logo-txt-color);
+  background-color: var(--primary-brand);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
@@ -331,7 +331,7 @@ img {
 
 .customer-link {
   display: flex;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -346,7 +346,7 @@ img {
   display: block;
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: var(--subtle-text-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
@@ -378,7 +378,7 @@ footer .container {
 }
 
 .footer-text {
-  color: var(--footer-text-color);
+  color: var(--accent-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
@@ -476,7 +476,7 @@ footer .container {
   width: 165px;
   height: 40px;
   padding: 8px 24px 8px 24px;
-  background: var(--main-btn-logo-txt-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -493,7 +493,7 @@ footer .container {
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 /* ============================= FOOTER =============================*/
@@ -517,7 +517,7 @@ footer .container {
   border-radius: 4px;
   padding: 12px 24px;
 
-  color: var(--main-btn-logo-txt-color);
+  color: var(--primary-brand);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -529,7 +529,7 @@ footer .container {
 }
 .menu-button:hover,
 .menu-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -657,7 +657,7 @@ footer .container {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 
 .modal-input {
@@ -752,7 +752,7 @@ footer .container {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 
 .terms-link {
@@ -789,7 +789,7 @@ footer .container {
   height: 56px;
   margin: 24px auto auto auto;
   padding: 16px 32px;
-  background: var(--main-btn-logo-txt-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -800,7 +800,7 @@ footer .container {
 
 .modal-submit-button:hover,
 .modal-submit-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 /*================================ MODAL ===========================*/

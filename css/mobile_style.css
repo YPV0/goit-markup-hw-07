@@ -1,11 +1,14 @@
 :root {
+  /*--------------------- COLORS--------------------------------*/
+
   --main-color: #2e2f42; /* Logo/hero/footer/nav_items color*/
-  --secondary-color: #fff; /* Title/Button/Cards*/
-  --link-hover-color: #404bbf; /* header links hover color*/
-  --additional-background-color: #f4f4fd; /* Team and menu button bg color, logo bottom 2nd part*/
-  --footer-text-color: #e7e9fc; /*Footer text color*/
-  --main-btn-logo-txt-color: #4d5ae5; /* Logo, service button , menu button color*/
-  --section-text-color: #434455;
+  --secondary-color: #fff; /* Light mode backgrounds Light mode Dialogs/alerts */
+  --pressed-state-color: #404bbf; /* CTAs Focused/Active states */
+  --light-color: #f4f4fd; /* Light mode backgrounds Light mode Dialogs/alerts */
+  --accent-color: #e7e9fc; /* Accent color Hairlines Subtle backgrounds */
+  --primary-brand-color: #4d5ae5; /* CTAs/Focused/Active states/Links */
+  --text-color: #434455; /* Body text */
+  --subtle-text-color: #8e8f99; /* helper text/ Deempasized text*/
 }
 
 a {
@@ -27,7 +30,7 @@ body {
 }
 /* ============================= COMPONENTS =============================*/
 .section-text {
-  color: var(--section-text-color);
+  color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -66,7 +69,7 @@ img {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--main-btn-logo-txt-color);
+  color: var(--primary-brand);
 }
 
 .logo-second-part {
@@ -111,7 +114,7 @@ img {
 }
 
 .nav-link.active {
-  color: #404bbf;
+  color: var(--pressed-state-color);
 }
 
 .nav-link.active::after {
@@ -121,13 +124,13 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background: #404bbf;
+  background: var(--pressed-state-color);
   border-radius: 2px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--link-hover-color);
+  color: var(--pressed-state-color);
 }
 
 .address {
@@ -136,7 +139,7 @@ img {
 }
 
 .address-item {
-  color: var(--section-text-color);
+  color: var(--text-color);
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -147,7 +150,7 @@ img {
 
 .address-item:hover,
 .address-item:focus {
-  color: var(--link-hover-color);
+  color: var(--pressed-state-color);
 }
 /* ============================= /HEADER =============================*/
 /* ============================= MAIN =============================*/
@@ -177,7 +180,7 @@ img {
 .service-button {
   display: block;
   margin: 0 auto;
-  background-color: var(--main-btn-logo-txt-color);
+  background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--secondary-color);
@@ -194,7 +197,7 @@ img {
 }
 .service-button:hover,
 .service-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 .visually-hidden {
@@ -297,7 +300,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--main-btn-logo-txt-color);
+  background-color: var(--primary-brand);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
@@ -305,7 +308,7 @@ img {
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 
 .team-social-icon {
@@ -331,7 +334,7 @@ img {
 
 .customer-link {
   display: flex;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -346,7 +349,7 @@ img {
   display: block;
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: var(--subtle-text-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
@@ -359,7 +362,7 @@ img {
 
 .customer-link:hover .customer-icon,
 .customer-link:focus .customer-icon {
-  fill: #404bbf;
+  fill: var(--pressed-state-color);
 }
 
 /* ============================= /MAIN =============================*/
@@ -378,7 +381,7 @@ footer .container {
 }
 
 .footer-text {
-  color: var(--footer-text-color);
+  color: var(--accent-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
@@ -476,7 +479,7 @@ footer .container {
   width: 165px;
   height: 40px;
   padding: 8px 24px 8px 24px;
-  background: var(--main-btn-logo-txt-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -493,7 +496,7 @@ footer .container {
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 /* ============================= FOOTER =============================*/
@@ -517,7 +520,7 @@ footer .container {
   border-radius: 4px;
   padding: 12px 24px;
 
-  color: var(--main-btn-logo-txt-color);
+  color: var(--primary-brand);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -529,7 +532,7 @@ footer .container {
 }
 .menu-button:hover,
 .menu-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -552,8 +555,8 @@ footer .container {
   top: 0;
   padding: 40px 32px 164px 32px;
   height: 100%;
-  background-color: #4d5ae5;
-  color: #f4f4fd;
+  background-color: var(--primary-brand);
+  color: var(--light-color);
   transform: translateY(100%);
 }
 
@@ -657,7 +660,7 @@ footer .container {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 
 .modal-input {
@@ -677,11 +680,11 @@ footer .container {
 
 .modal-input:focus {
   outline: transparent;
-  border-color: #4d5ae5;
+  border-color: var(--primary-brand);
 }
 
 .modal-input:focus + .modal-input-icon {
-  fill: #4d5ae5;
+  fill: var(--primary-brand);
 }
 
 .modal-field {
@@ -697,7 +700,7 @@ footer .container {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
-  fill: #2e2f42;
+  fill: var(--main-color);
   width: 12px;
   height: 12px;
   transition-duration: 250ms;
@@ -743,16 +746,16 @@ footer .container {
 }
 
 .modal-checkbox:checked ~ .terms-label > .terms-checkbox {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
   border-color: #404bbf;
-  fill: #f4f4fd;
+  fill: var(--light-color);
 }
 
 .terms-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 
 .terms-link {
@@ -762,7 +765,7 @@ footer .container {
 
 .modal-cross-button:hover,
 .modal-cross-button:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 
 .modal-icon-cross {
@@ -789,7 +792,7 @@ footer .container {
   height: 56px;
   margin: 24px auto auto auto;
   padding: 16px 32px;
-  background: var(--main-btn-logo-txt-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -800,7 +803,7 @@ footer .container {
 
 .modal-submit-button:hover,
 .modal-submit-button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--pressed-state-color);
 }
 
 /*================================ MODAL ===========================*/
