@@ -314,11 +314,9 @@
   footer .container {
     width: 1158px;
     max-width: 100%;
-    align-items: center;
-    justify-content: center;
+    gap: 0;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 0;
   }
   .footer-left {
     margin-right: 120px;
@@ -331,6 +329,10 @@
 
   .footer-subscribe {
     margin-left: 80px;
+  }
+
+  .subscribe-input-email {
+    max-width: 264px;
   }
 
   .subscribe-form {
