@@ -190,6 +190,10 @@ header .container {
   color: var(--pressed-state-color);
 }
 
+.mob-navigation .active {
+  color: var(--pressed-state-color);
+}
+
 .mob-address {
   margin-bottom: 48px;
 }
