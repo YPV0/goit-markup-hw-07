@@ -752,12 +752,6 @@ footer .container {
   overflow: auto;
 }
 
-@media screen and (max-width: 407px) {
-  .modal {
-    max-width: 90vw;
-  }
-}
-
 .modal-cross-button {
   width: 24px;
   height: 24px;
