@@ -435,6 +435,12 @@ header .container {
   margin-bottom: 72px;
 }
 
+@media screen and (max-width: 426px) {
+  .customer:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 72px;
+  }
+}
+
 .customer-icon {
   display: block;
   width: 110px;
