@@ -14,6 +14,8 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/mobile_style.css">
+    <link rel="stylesheet" href="./css/tablet_style.css">
+    <link rel="stylesheet" href="./css/desktop_style.css">
     <title>Studio</title>
 
 </head>
@@ -23,25 +25,25 @@
         <div class="container">
             <nav class="navigation">
                 <a class="logo" href="./index.html">WEB<span class="logo logo-second-part">STUDIO</span></a>
-                <ul class="nav-left media-hidden list"> <!-- Left side of the navigation menu-->
+                <ul class="nav-left media-mob-hidden list"> <!-- Left side of the navigation menu-->
                     <li><a class="nav-link active" href="./index.html">Studio</a></li>
                     <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
             <address>
-                <ul class="address media-hidden list">
+                <ul class="address media-mob-hidden list">
                     <li><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-item" href="tel:+1100011111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
-            <button class="menu-open" type="button">
+            <button class="menu-open media-tab-dt-hidden" type="button">
                 <svg class="menu-icon">
                     <use href="./images/icons.svg#icon-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu">
+        <div class="mob-menu media-tab-dt-hidden">
             <div class="mob-menu-top">
                 <button type="button" class="menu-close-button">
                     <svg class="menu-close-icon">
@@ -109,7 +111,7 @@
                 <h2 class="visually-hidden"> Our Features</h2>
                 <ul class="features-list list">
                     <li class="feature">
-                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
+                        <div class="feature-wrap media-mob-tab-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-anthena"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Strategy</h3>
@@ -120,7 +122,7 @@
                             solution.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
+                        <div class="feature-wrap media-mob-tab-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg> </div>
                         <h3 class="section-subtitle">Punctuality</h3>
@@ -131,7 +133,7 @@
                             time.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
+                        <div class="feature-wrap media-mob-tab-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Diligence</h3>
@@ -141,7 +143,7 @@
                             risk.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
+                        <div class="feature-wrap media-mob-tab-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Technologies</h3>
@@ -155,7 +157,7 @@
             </div>
         </section>
 
-        <section class="work-examples media-hidden">
+        <section class="work-examples media-mob-tab-hidden">
             <div class="container">
                 <h2 class="section-title">What Are We Doing</h2> <!-- Work examples list-->
                 <ul class="article-images list">

@@ -1,72 +1,181 @@
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 426px;
+  }
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  gap: 76px;
-}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 582px;
+  }
 
-.nav-left {
-  display: flex;
-  gap: 40px;
-}
+  .media-mob-hidden {
+    display: flex;
+    visibility: visible;
+  }
 
-.nav-link {
-  position: relative;
-  color: var(--main-color);
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  display: block;
-  padding: 24px 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
+  .media-tab-dt-hidden {
+    display: none;
+    visibility: hidden;
+  }
 
-.nav-link.active {
-  color: var(--pressed-state-color);
-}
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    width: 100%;
+  }
+  header .container {
+    display: flex;
+    max-width: 766px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.nav-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--pressed-state-color);
-  border-radius: 2px;
-}
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--pressed-state-color);
-}
+  .nav-left {
+    display: flex;
+    gap: 40px;
+  }
 
-.address {
-  display: flex;
-  gap: 40px;
-}
+  .nav-link {
+    position: relative;
+    color: var(--main-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
 
-.address-item {
-  color: var(--text-color);
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
+  .nav-link.active {
+    color: #404bbf;
+  }
 
-.address-item:hover,
-.address-item:focus {
-  color: var(--pressed-state-color);
+  .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    border-radius: 2px;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--pressed-state-color);
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address-item {
+    color: var(--text-color);
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+
+  .address-item:hover,
+  .address-item:focus {
+    color: var(--pressed-state-color);
+  }
+
+  .hero {
+    padding: 108px 0;
+    width: 100%;
+  }
+
+  .hero .container,
+  .features.container {
+    max-width: 766px;
+  }
+
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .feature {
+    width: calc(50% - 12px);
+    display: block;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .cards:not(:nth-child(-n + 2)) {
+    margin-bottom: 64px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customer-link {
+    width: 168px;
+    height: 88px;
+  }
+
+  footer .container {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+    column-gap: 0px;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    width: calc(50% - 12px);
+    align-items: start;
+  }
+
+  .footer-right {
+    width: calc(50% - 12px);
+    align-items: start;
+  }
+
+  .footer-subscribe {
+    width: auto;
+    align-items: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .subscribe-input-email {
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--secondary-color);
+    padding-left: 16px;
+  }
 }
