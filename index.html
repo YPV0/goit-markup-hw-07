@@ -23,18 +23,76 @@
         <div class="container">
             <nav class="navigation">
                 <a class="logo" href="./index.html">WEB<span class="logo logo-second-part">STUDIO</span></a>
-                <ul class="nav-left list"> <!-- Left side of the navigation menu-->
+                <ul class="nav-left media-hidden list"> <!-- Left side of the navigation menu-->
                     <li><a class="nav-link active" href="./index.html">Studio</a></li>
                     <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
             <address>
-                <ul class="address list">
+                <ul class="address media-hidden list">
                     <li><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-item" href="tel:+1100011111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
+            <button class="menu-open" type="button">
+                <svg class="menu-icon">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu">
+            <div class="mob-menu-top">
+                <button type="button" class="menu-close-button">
+                    <svg class="menu-close-icon">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="mob-navigation list"> <!-- Left side of the navigation menu-->
+                    <li><a class="mob-nav-link active" href="./index.html">Studio</a></li>
+                    <li><a class="mob-nav-link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="mob-nav-link" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="mob-address list">
+                    <li><a class="mob-address-item mob-phone-number" href="tel:+1100011111">+11(000)111-11-11</a></li>
+                    <li><a class="mob-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+
+
+                <ul class="menu-social list">
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
@@ -51,7 +109,7 @@
                 <h2 class="visually-hidden"> Our Features</h2>
                 <ul class="features-list list">
                     <li class="feature">
-                        <div class="feature-wrap"> <svg class="feature-icon">
+                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-anthena"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Strategy</h3>
@@ -62,7 +120,7 @@
                             solution.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap"> <svg class="feature-icon">
+                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg> </div>
                         <h3 class="section-subtitle">Punctuality</h3>
@@ -73,7 +131,7 @@
                             time.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap"> <svg class="feature-icon">
+                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Diligence</h3>
@@ -83,7 +141,7 @@
                             risk.</p>
                     </li>
                     <li class="feature">
-                        <div class="feature-wrap"> <svg class="feature-icon">
+                        <div class="feature-wrap media-hidden"> <svg class="feature-icon">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg></div>
                         <h3 class="section-subtitle">Technologies</h3>
@@ -97,7 +155,7 @@
             </div>
         </section>
 
-        <section class="work-examples">
+        <section class="work-examples media-hidden">
             <div class="container">
                 <h2 class="section-title">What Are We Doing</h2> <!-- Work examples list-->
                 <ul class="article-images list">
@@ -121,7 +179,7 @@
                         <img class="card-img" src="./images/markguerrero.jpg"
                             alt="A smiling man with a dark hair and a beard" width="264" height="260">
                         <div class="card-body">
-                            <h3 class="card-title section-subtitle">Mark Guerrero</h3>
+                            <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-text section-text">Product Designer</p>
                             <ul class="team-social list">
                                 <li class="team-social-item">
@@ -161,7 +219,7 @@
                         <img class="card-img" src="./images/tomford.jpg"
                             alt=" A smiling man with brown hairs looking to his right" width="264" height="260">
                         <div class="card-body">
-                            <h3 class="card-title section-subtitle">Tom Ford</h3>
+                            <h3 class="card-title">Tom Ford</h3>
                             <p class="card-text section-text">Frontend Developer</p>
                             <ul class="team-social list">
                                 <li class="team-social-item">
@@ -201,7 +259,7 @@
                         <img class="card-img" src="./images/camilagarcia.jpg"
                             alt="A smiling woman looking at the camera" width="264" height="260">
                         <div class="card-body">
-                            <h3 class="card-title section-subtitle">Camila Garcia</h3>
+                            <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-text section-text">Marketing</p>
                             <ul class="team-social list">
                                 <li class="team-social-item">
@@ -241,7 +299,7 @@
                         <img class="card-img" src="./images/danielwilson.jpg" alt="A smiling man looking at the camera"
                             width="264" height="260">
                         <div class="card-body">
-                            <h3 class="card-title section-subtitle">Daniel Wilson</h3>
+                            <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-text section-text">UI Designer</p>
                             <ul class="team-social list">
                                 <li class="team-social-item">
@@ -460,6 +518,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
