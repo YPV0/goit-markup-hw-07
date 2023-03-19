@@ -160,13 +160,38 @@
             <div class="container">
                 <h2 class="section-title">What Are We Doing</h2> <!-- Work examples list-->
                 <ul class="article-images list">
-                    <li><img class="work-example-image" src="./images/rectangle1.jpg"
-                            alt=" A monitor with a website displayed on it" width="360" height="300"></li>
-                    <li><img class="work-example-image" src="./images/rectangle2.jpg"
-                            alt=" A mobile phone with a mobile aplication displayed on it" width="360" height="300">
+                    <li>
+                        <picture>
+                            <source srcset="
+                            ./images/work-dt-1.jpg    1x,
+                            ./images/work-dt-1-x2.jpg 2x
+                          " media="(min-width: 1200px)" />
+                            <img class="work-example-image" src="./images/work-dt-1.jpg"
+                                alt=" A monitor with a website displayed on it" width="360" height="300">
+                        </picture>
                     </li>
-                    <li><img class="work-example-image" src="./images/rectangle3.jpg"
-                            alt=" A phone and a monitor displaying apps" width="360" height="300"></li>
+                    <li>
+                        <picture>
+                            <source srcset="
+                            ./images/work-dt-2.jpg    1x,
+                            ./images/work-dt-2-x2.jpg 2x
+                          "
+                                media="(min-width: 1200px)" />
+                            <img class="work-example-image" src="./images/work-dt-2.jpg"
+                                alt=" A mobile phone with a mobile aplication displayed on it" width="360" height="300">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="
+                            ./images/work-dt-3.jpg    1x,
+                            ./images/work-dt-3-x2.jpg 2x
+                          "
+                                media="(min-width: 1200px)" />
+                            <img class="work-example-image" src="./images/work-dt-3.jpg"
+                                alt=" A phone and a monitor displaying apps" width="360" height="300">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -177,8 +202,21 @@
                 <h2 class=" section-title">Our Team</h2>
                 <ul class="cards list">
                     <li class="card">
-                        <img class="card-img" src="./images/markguerrero.jpg"
-                            alt="A smiling man with a dark hair and a beard" width="264" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/team-dt-1.jpg    1x,
+                            ./images/team-dt-1-x2.jpg 2x
+                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/team-tab-1.jpg    1x,
+                            ./images/team-tab-1-x2.jpg 2x
+                          " media="(min-width: 768px)" />
+                            <source srcset="
+                               ./images/team-mob-1.jpg    1x,
+                               ./images/team-mob-1-x2.jpg 2x
+                             " media="(max-width: 767px)" />
+                            <img class="card-img" src="./images/team-mob-1.jpg"  alt="A smiling man with a dark hair and a beard" width="264" height="260" />
+                        </picture>
                         <div class="card-body">
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-text section-text">Product Designer</p>
@@ -217,8 +255,21 @@
                     </li>
 
                     <li class="card">
-                        <img class="card-img" src="./images/tomford.jpg"
-                            alt=" A smiling man with brown hairs looking to his right" width="264" height="260">
+                        <picture>
+                            <source srcset="
+                           ./images/team-dt-2.jpg    1x,
+                           ./images/team-dt-2-x2.jpg 2x
+                         " media="(min-width: 1200px)" />
+                            <source srcset="
+                           ./images/team-tab-2.jpg    1x,
+                           ./images/team-tab-2-x2.jpg 2x
+                         " media="(min-width: 768px)" />
+                            <source srcset="
+                           ./images/team-mob-2.jpg    1x,
+                           ./images/team-mob-2-x2.jpg 2x
+                         " media="(max-width: 767px)" />
+                            <img class="card-img" src="./images/team-mob-2.jpg"  alt=" A smiling man with brown hairs looking to his right" width="264" height="260" />
+                        </picture>
                         <div class="card-body">
                             <h3 class="card-title">Tom Ford</h3>
                             <p class="card-text section-text">Frontend Developer</p>
@@ -257,8 +308,24 @@
                     </li>
 
                     <li class="card">
-                        <img class="card-img" src="./images/camilagarcia.jpg"
-                            alt="A smiling woman looking at the camera" width="264" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/team-dt-3.jpg    1x,
+                            ./images/team-dt-3-x2.jpg 2x
+                          "
+                                media="(min-width: 1200px)" />
+                            <source srcset="
+                            ./images/team-tab-3.jpg    1x,
+                            ./images/team-tab-3-x2.jpg 2x
+                          "
+                                media="(min-width: 768px)" />
+                            <source srcset="
+                               ./images/team-mob-3.jpg    1x,
+                               ./images/team-mob-3-x2.jpg 2x
+                             "
+                                media="(max-width: 767px)" />
+                            <img class="card-img" src="./images/team-mob-3.jpg" alt="A smiling man looking at the camera" width="264" height="260" />
+                        </picture>
                         <div class="card-body">
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-text section-text">Marketing</p>
@@ -297,8 +364,24 @@
                     </li>
 
                     <li class="card">
-                        <img class="card-img" src="./images/danielwilson.jpg" alt="A smiling man looking at the camera"
-                            width="264" height="260">
+                        <picture>
+                            <source srcset="
+                              ./images/team-dt-4.jpg    1x,
+                             ./images/team-dt-4-x2.jpg 2x
+                            "
+                                media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/team-tab-4.jpg    1x,
+                              ./images/team-tab-4-x2.jpg 2x
+                            "
+                                media="(min-width: 768px)" />
+                            <source srcset="
+                              ./images/team-mob-4.jpg    1x,
+                              ./images/team-mob-4-x2.jpg 2x
+                             "
+                                media="(max-width: 767px)" />
+                            <img class="card-img" src="./images/team-mob-4.jpg" alt="A smiling man looking at the camera" width="264" height="260" />
+                        </picture>
                         <div class="card-body">
                             <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-text section-text">UI Designer</p>
