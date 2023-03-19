@@ -340,6 +340,16 @@
     flex-wrap: nowrap;
   }
 
+  .feature .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .feature .section-text {
+    font-weight: 400;
+  }
+
   .work-examples {
     padding-bottom: 120px;
   }
@@ -376,6 +386,9 @@
   .card-img {
     width: 264px;
     height: 260px;
+  }
+  .card-text {
+    font-weight: 400;
   }
 
   .customers {
