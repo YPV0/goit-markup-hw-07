@@ -208,8 +208,30 @@
   height: 584px;
   }
 
+  .portfolio-section {
+    padding: 64px 0 96px 0;
+  }
 
+  .portfolio-section .container {
+    max-width: 766px;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    gap: 24px;
 }
+
+.cards-grid {
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 72px;
+}
+
+.grid-image{
+  width: 356px;
+  height: 300px;
+}
+
 
 @media screen and (min-width: 1200px) {
   .media-mob-hidden {
@@ -396,6 +418,19 @@
   .subscribe-form {
     display: flex;
     gap: 24px;
+  }
+
+  .portfolio-section {
+    padding: 100px 0;
+  }
+
+  .portfolio-section .container {
+    max-width: 1158px;
+    gap: 72px;
+  }
+
+  .cards-grid {
+    row-gap: 48px;
   }
 
 }

@@ -635,14 +635,22 @@ footer .container {
 /*================================PORTFOLIO===========================*/
 
 .portfolio-section {
-  padding: 96px 0 120px 0;
+  padding: 48px 0;
 }
 
 .menu {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  column-gap: 24px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+
+}
+
+.portfolio-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .menu-button {
@@ -650,7 +658,7 @@ footer .container {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
-
+  white-space: nowrap;
   color: var(--primary-brand-color);
   font-weight: 500;
   line-height: 1.5;
@@ -674,6 +682,13 @@ footer .container {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 48px;
+}
+
+.grid-card-content .section-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .grid-image-wrap {
@@ -707,9 +722,6 @@ footer .container {
   transform: translateY(0);
 }
 
-.grid-card:not(:nth-of-type(n + 7)) {
-  margin-bottom: 48px;
-}
 .grid-card:hover,
 .grid-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
