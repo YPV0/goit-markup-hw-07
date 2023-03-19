@@ -13,27 +13,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container tab-container">
             <nav class="navigation">
                 <a class="logo" href="./index.html">WEB<span class="logo logo-second-part">STUDIO</span></a>
-                <ul class="nav-left list"> <!-- Left side of the navigation menu-->
-                    <li><a class="nav-link" href="./index.html">Studio</a></li>
-                    <li><a class="nav-link active" href="./portfolio.html">Portfolio</a></li>
+                <ul class="nav-left media-mob-hidden list"> <!-- Left side of the navigation menu-->
+                    <li><a class="nav-link active" href="./index.html">Studio</a></li>
+                    <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
             <address>
-                <ul class="address list">
+                <ul class="address media-mob-hidden list">
                     <li><a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-item" href="tel:+1100011111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
+            <button class="menu-open media-tab-dt-hidden" type="button">
+                <svg class="menu-icon">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu media-tab-dt-hidden">
+            <div class="mob-menu-top">
+                <button type="button" class="menu-close-button">
+                    <svg class="menu-close-icon">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="mob-navigation list"> <!-- Left side of the navigation menu-->
+                    <li><a class="mob-nav-link active" href="./index.html">Studio</a></li>
+                    <li><a class="mob-nav-link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="mob-nav-link" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="mob-address list">
+                    <li><a class="mob-address-item mob-phone-number" href="tel:+1100011111">+11(000)111-11-11</a></li>
+                    <li><a class="mob-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+
+
+                <ul class="menu-social list">
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="menu-social-link">
+                            <svg class="menu-social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
