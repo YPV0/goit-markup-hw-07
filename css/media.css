@@ -39,7 +39,7 @@
   .navigation {
     display: flex;
     align-items: center;
-    gap: 76px;
+    gap: 120px;
   }
 
   .nav-left {
@@ -274,6 +274,10 @@
   }
   .header .container {
     max-width: 100%;
+  }
+
+  .navigation {
+    gap: 76px;
   }
 
   .address {
