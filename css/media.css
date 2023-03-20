@@ -218,6 +218,11 @@
     color: var(--secondary-color);
     padding-left: 16px;
   }
+
+  .subscribe-input-email::placeholder {
+    color: var(--secondary-color);
+  }
+
   .modal {
     max-width: none;
     width: 408px;
