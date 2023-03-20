@@ -488,5 +488,9 @@
     max-width: 360px;
   }
 
+  .modal {
+    height: 584px;
+  }
+
 
 }
