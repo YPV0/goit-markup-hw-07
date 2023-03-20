@@ -2,6 +2,11 @@
   .container {
     max-width: 426px;
   }
+  .mob-phone-number {
+    font-size: 36px;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -78,13 +83,15 @@
   .address {
     display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 
   .address-item {
     color: var(--text-color);
     font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
@@ -121,20 +128,20 @@
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
+  margin: 0 auto 36px auto;
 }
 
 
-  .features.container {
-    display: flex;
+  .features .container {
     max-width: 766px;
-    align-items: center;
   }
 
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 72px;
+
   }
   .feature {
     width: calc(50% - 12px);
@@ -153,8 +160,12 @@
     row-gap: 72px;
   }
 
+.customer {
+  width: 168px;
+}
+
   .customer-link {
-    width: 168px;
+    width: 100%;
     height: 88px;
   }
 
@@ -227,11 +238,16 @@
   row-gap: 72px;
 }
 
+.grid-card {
+  width: calc((100% - 24px - 15px) / 2);
+  max-width: 356px;
+}
+
 .grid-image{
   width: 356px;
   height: 300px;
 }
-
+}
 
 @media screen and (min-width: 1200px) {
   .media-mob-hidden {
@@ -268,6 +284,7 @@
   .address-item {
     color: var(--text-color);
     font-style: normal;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition-duration: 250ms;
@@ -288,6 +305,7 @@
 
   .hero {
     padding: 188px 0;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -308,8 +326,9 @@
     }
   }
 
-
-
+.hero-title { 
+  margin: 0 auto 48px auto;
+}
   .features .container {
     display: flex;
     align-items: center;
@@ -400,6 +419,16 @@
     gap: 24px;
   }
 
+  .customer {
+    width: none;
+  }
+  
+    .customer-link {
+      width: 168px;
+      height: 88px;
+    }
+
+
   footer {
     padding: 100px 0;
   }
@@ -445,5 +474,10 @@
   .cards-grid {
     row-gap: 48px;
   }
+
+  .grid-card {
+    max-width: 360px;
+  }
+
 
 }

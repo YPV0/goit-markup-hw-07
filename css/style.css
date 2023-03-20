@@ -219,7 +219,8 @@ header .container {
 .mob-phone-number {
   display: inline-block;
   font-weight: 700;
-  font-size: 36px;
+  color: var(--primary-brand-color);
+  font-size: 27px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -292,13 +293,13 @@ header .container {
 }
 
 .hero-title {
+  margin: 0 auto 72px auto;
   font-size: 36px;
   line-height: 1.11;
   color: var(--secondary-color);
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
-  margin: 112px auto 72px auto;
 }
 .service-button {
   display: block;
@@ -442,13 +443,18 @@ header .container {
   row-gap: 72px;
 }
 
+.customer {
+  width: calc((100% - 16px) / 2);
+}
+
+
 .customer-link {
   display: flex;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  width: 190px;
+  width: 100%;
   height: 88px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -654,7 +660,7 @@ footer .container {
 }
 
 .menu-button {
-  background-color: var(--additional-background-color);
+  background-color: var(--light-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
@@ -701,6 +707,7 @@ footer .container {
   top: 0;
   padding: 40px 32px 164px 32px;
   height: 100%;
+  font-weight: 400;
   background-color: var(--primary-brand-color);
   color: var(--light-color);
   transform: translateY(100%);
