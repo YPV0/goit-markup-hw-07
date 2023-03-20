@@ -483,6 +483,10 @@
     row-gap: 48px;
   }
 
+  .card {
+    margin-bottom: 0;
+  }
+
   .grid-card {
     max-width: 360px;
   }
